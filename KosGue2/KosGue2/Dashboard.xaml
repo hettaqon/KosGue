@@ -1,0 +1,14 @@
+﻿<UserControl x:Class="KosGue2.Dashboard"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:KosGue2"
+             mc:Ignorable="d" Background="LightGray"
+             Height="auto" Width="auto">
+    <Grid>
+        <TextBlock Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1" FontSize="25" FontWeight="Bold" FontStyle="Italic">
+            <TextBlock Text="Selamat datang di KosGue" />
+        </TextBlock>
+    </Grid>
+</UserControl>

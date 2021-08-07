@@ -1,0 +1,52 @@
+﻿<UserControl x:Class="KosGue2.Kos.AddKos"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:KosGue2.Kos"
+             mc:Ignorable="d" 
+             Height="auto" Width="auto">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0"/>
+            <ColumnDefinition Width="40"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="0"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="backBtn" BorderThickness="0" Background="Transparent" Grid.Column="1" Grid.Row="1"  Content="&lt;" FontSize="30" FontWeight="Black" Click="backBtn_Click"/>
+        <TextBlock Text="Tambah Kos" Grid.Column="2" Grid.ColumnSpan="4" Grid.Row="1" FontSize="50" Margin="5"/>
+        <TextBlock Text="Kode Kos" Grid.Column="2" Grid.Row="2" Margin="5"/>
+        <TextBlock Text="Nama Kos" Grid.Column="2" Grid.Row="3" Margin="5"/>
+        <TextBlock Text="Alamat" Grid.Column="2" Grid.Row="4" Margin="5"/>
+        <TextBlock Text="Jumlah Kamar" Grid.Column="2" Grid.Row="5" Margin="5"/>
+        <TextBlock Text="Fasilitas" Grid.Column="2" Grid.Row="6" Margin="5"/>
+        <TextBlock Text="Kode Petugas" Grid.Column="2" Grid.Row="7" Margin="5"/>
+        <TextBlock Text="Kontak" Grid.Column="2" Grid.Row="8" Margin="5"/>
+        <TextBox x:Name="KodeKosTBox" Text="Tambahkan kode kos" FontStyle="Italic" FontWeight="Light" Grid.Column="3" Grid.ColumnSpan="3" Grid.Row="2" Margin="5" GotFocus="KodeKosTBox_GotFocus"/>
+        <TextBox x:Name="NamaTBox" Text="Tambahkan nama kos" FontStyle="Italic" FontWeight="Light" Grid.Column="3" Grid.ColumnSpan="3" Grid.Row="3" Margin="5" GotFocus="NamaTBox_GotFocus"/>
+        <TextBox x:Name="AlamatTBox" Text="Tambahkan alamat" FontStyle="Italic" FontWeight="Light" Grid.Column="3" Grid.ColumnSpan="3" Grid.Row="4" Margin="5" GotFocus="AlamatTBox_GotFocus"/>
+        <TextBox x:Name="JmlKamarTBox" Text="Tambahkan jumlah kamar" FontStyle="Italic" FontWeight="Light" Grid.Column="3" Grid.ColumnSpan="3" Grid.Row="5" Margin="5" GotFocus="JmlKamarTBox_GotFocus"/>
+        <TextBox x:Name="FasilitasTBox" Text="Tambahkan fasilitas" FontStyle="Italic" FontWeight="Light" Grid.Column="3" Grid.ColumnSpan="3" Grid.Row="6" Margin="5" GotFocus="FasilitasTBox_GotFocus"/>
+        <TextBox x:Name="KodePetugasTBox" Text="Tambahkan kode petugas" FontStyle="Italic" FontWeight="Light" Grid.Column="3" Grid.ColumnSpan="3" Grid.Row="7" Margin="5" GotFocus="KodePetugasTBox_GotFocus"/>
+        <TextBox x:Name="KontakTBox" Text="Tambahkan kontak" FontStyle="Italic" FontWeight="Light" Grid.Column="3" Grid.ColumnSpan="3" Grid.Row="8" Margin="5" GotFocus="KontakTBox_GotFocus"/>
+        <Button x:Name="AddBtn" Content="Add" Grid.Column="5" Grid.ColumnSpan="1" Background="LightGreen" FontWeight="Bold" Grid.Row="9" Margin="5" Click="AddBtn_Click"/>
+    </Grid>
+</UserControl>
